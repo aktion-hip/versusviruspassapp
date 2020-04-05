@@ -17,4 +17,6 @@
     <string name="content_self_test_btn_send">Test Senden</string>
     <string name="content_self_test_lbl_idcard">Nummer des gewählten ID-Dokuments</string>
     <string name="content_self_test_lbl_radio_grp">Art des Identifikationsdokuments</string>
+    <string name="content_challenge_status_btn_QR">QR Code scannen</string>
+    <string name="content_challenge_status_lbl_idcard">Nummer des Ausweisdokuments der Person</string>
 </resources>

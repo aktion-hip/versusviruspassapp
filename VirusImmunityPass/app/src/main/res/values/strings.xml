@@ -20,4 +20,7 @@
     <string name="content_self_test_radio_idcard">Identity card</string>
     <string name="content_self_test_lbl_idcard">Number of the selected ID document</string>
 
+    <string name="content_challenge_status_btn_QR">Scan QR Code</string>
+    <string name="content_challenge_status_lbl_idcard">Number of  person\'s ID document</string>
+
 </resources>

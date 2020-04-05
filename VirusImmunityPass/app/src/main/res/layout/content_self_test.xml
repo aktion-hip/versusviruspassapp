@@ -21,11 +21,11 @@
 
     <Button
         android:id="@+id/button_testkit"
+        android:text="@string/content_self_test_btn_testkit"
         android:layout_width="@dimen/btn_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:background="@color/colorButton"
-        android:text="@string/content_self_test_btn_testkit"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
