@@ -1,16 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
         android:text="@string/content_challenge_status_title"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
-        android:layout_weight="1"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/button_scan_QR"
+        android:text="@string/content_challenge_status_btn_QR"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorButton"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/lbl_grp_document_ids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:labelFor="@+id/grp_document_ids"
+        android:text="@string/content_self_test_lbl_radio_grp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_scan_QR" />
+
+    <RadioGroup
+        android:id="@+id/grp_document_ids"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="4dp"
+        android:checkedButton="@id/radio_idcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_grp_document_ids">
+
+        <RadioButton
+            android:id="@+id/radio_idcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/content_self_test_radio_idcard"
+            tools:layout_editor_absoluteX="150dp" />
+
+        <RadioButton
+            android:id="@+id/radio_passport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/content_self_test_radio_pass"
+            tools:layout_editor_absoluteX="150dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lbl_id_document_nr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:labelFor="@+id/edit_id_document_nr"
+        android:text="@string/content_challenge_status_lbl_idcard"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grp_document_ids" />
+
+    <EditText
+        android:id="@+id/edit_id_document_nr"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:autofillHints="@string/content_self_test_input_docid"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_id_document_nr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
