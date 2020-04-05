@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VirusImmunityPass</string>
+    <string name="app_name">Virus Immunity Pass</string>
     
     <string name="action_main_test">Virus-Immunitäts-Pass</string>
     <string name="content_main_title">Virus-Immunitäts-Pass</string>
@@ -9,4 +9,12 @@
     <string name="content_main_btn_self_test">Selbsttest</string>
     <string name="content_main_btn_show_status">Immunitätsstatus anzeigen</string>
     <string name="content_main_btn_challenge_status">Immunitätsstatus abfragen</string>
+    <string name="content_self_test_btn_testkit">Foto von der Testkid-ID</string>
+    <string name="content_self_test_btn_testresult">Foto vom Testresultat</string>
+    <string name="content_self_test_input_docid">ID des Dokuments (z.B. Passnummer)</string>
+    <string name="content_self_test_radio_pass">Pass</string>
+    <string name="content_self_test_radio_idcard">Identitätskarte</string>
+    <string name="content_self_test_btn_send">Test Senden</string>
+    <string name="content_self_test_lbl_idcard">Nummer des gewählten ID-Dokuments</string>
+    <string name="content_self_test_lbl_radio_grp">Art des Identifikationsdokuments</string>
 </resources>

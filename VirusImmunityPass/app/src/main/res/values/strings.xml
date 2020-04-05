@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VirusImmunityPass</string>
+    <string name="app_name">Virus Immunity Pass</string>
 
     <string name="action_main_test">Virus Immunity Pass</string>
     <string name="content_main_title">Virus Immunity Pass</string>
@@ -10,5 +10,14 @@
     <string name="content_main_btn_self_test">Selftest</string>
     <string name="content_main_btn_show_status">Show Status of Immunity</string>
     <string name="content_main_btn_challenge_status">Challenge Status of Immunity</string>
+
+    <string name="content_self_test_btn_testkit">Take Photo from Testkid ID</string>
+    <string name="content_self_test_btn_testresult">Take Photo from Testresult</string>
+    <string name="content_self_test_btn_send">Send Test</string>
+    <string name="content_self_test_input_docid">Document ID (e.g. Passport NR)</string>
+    <string name="content_self_test_lbl_radio_grp">Kind of ID document</string>
+    <string name="content_self_test_radio_pass">Passport</string>
+    <string name="content_self_test_radio_idcard">Identity card</string>
+    <string name="content_self_test_lbl_idcard">Number of the selected ID document</string>
 
 </resources>
